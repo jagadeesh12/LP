@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="378.433132">
+<testcase classname="LitPro library" name="LitProLibrary - Validating the Usage Details of the student - Teacher" time="378.433132">
+<failure message="java.lang.NullPointerException&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)&#10;&#9;at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)&#10;&#9;at com.scholastic.intl.litpro.test.automation.pageobjects.ParentPage.sync(ParentPage.java:100)&#10;&#9;at com.scholastic.intl.litpro.test.automation.pageobjects.ParentPage.type(ParentPage.java:134)&#10;&#9;at com.scholastic.intl.litpro.test.automation.pageobjects.SlzLoginPg.login(SlzLoginPg.java:239)&#10;&#9;at com.scholastic.intl.litpro.test.automation.pageobjects.SlzLoginPg.loginAs(SlzLoginPg.java:248)&#10;&#9;at com.scholastic.intl.litpro.test.automation.pageobjects.BasePage.launchPortal(BasePage.java:54)&#10;&#9;at com.scholastic.intl.litpro.test.automation.stepdefs.lpl.LplCommonFlow.i_login_into_SLZ_as_a(LplCommonFlow.java:83)&#10;&#9;at ✽.When I login into SLZ as a &quot;Teacher&quot;(LPLCommonUI.feature:402)&#10;"><![CDATA[When I login into SLZ as a "Student"........................................passed
+Then I should collect the usage detail info.................................passed
+When I login into SLZ as a "Teacher"........................................failed
+Then I should click on "breaking bad 6" in roster tree......................skipped
+Then I should click on "Lui Class" in roster tree...........................skipped
+Then I should click on student "Snow Jon" in roster tree....................skipped
+Then I should compare usage detail info of student with teacher.............skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.scholastic.intl.litpro.test.automation.pageobjects.ParentPage.sync(ParentPage.java:100)
+	at com.scholastic.intl.litpro.test.automation.pageobjects.ParentPage.type(ParentPage.java:134)
+	at com.scholastic.intl.litpro.test.automation.pageobjects.SlzLoginPg.login(SlzLoginPg.java:239)
+	at com.scholastic.intl.litpro.test.automation.pageobjects.SlzLoginPg.loginAs(SlzLoginPg.java:248)
+	at com.scholastic.intl.litpro.test.automation.pageobjects.BasePage.launchPortal(BasePage.java:54)
+	at com.scholastic.intl.litpro.test.automation.stepdefs.lpl.LplCommonFlow.i_login_into_SLZ_as_a(LplCommonFlow.java:83)
+	at ✽.When I login into SLZ as a "Teacher"(LPLCommonUI.feature:402)
+]]></failure>
+</testcase>
+</testsuite>

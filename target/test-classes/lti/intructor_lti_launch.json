@@ -1,0 +1,91 @@
+{
+  "identifiers" : {
+    "staffId" : "1082"
+  },
+  "orgContext" : {
+    "organization" : {
+      "id" : "124",
+      "name" : "PS 21",
+      "orgType" : "school",
+      "lastModifiedDate" : "2016-02-18T18:11:32.000-0500"
+    },
+    "entitlements" : [ {
+      "id" : "1",
+      "name" : "Litpro",
+      "url" : "http://sda-dev.scholastic.com/litpro",
+      "thumbnail" : "/resources/images/product_icons/litpro.png",
+      "active" : true
+    }, {
+      "id" : "2",
+      "name" : "Litpro Library",
+      "url" : "http://sda-dev.scholastic.com/LitProLib/",
+      "thumbnail" : "/resources/images/product_icons/litprolib.png",
+      "active" : true
+    } ],
+    "currentSchoolCalendar" : {
+      "description" : "School Calendar 2015",
+      "startDate" : "2015-07-31T20:00:00.000-0400",
+      "endDate" : "2016-07-30T20:00:00.000-0400"
+    },
+    "roles" : [ "teacher" ]
+  },
+  "launchContext" : {
+    "application" : {
+      "id" : "1",
+      "name" : "Litpro",
+      "url" : "http://sda-dev.scholastic.com/litpro",
+      "thumbnail" : "/resources/images/product_icons/litpro.png",
+      "active" : true
+    },
+    "productEntitlements" : [ {
+      "id" : "1",
+      "name" : "Litpro",
+      "productCode" : "Litpro",
+      "applicationId" : "1",
+      "active" : true,
+      "includesStudentAccess" : true
+    } ],
+    "role" : "teacher"
+  },
+  "teacherContext" : {
+    "classes" : [ {
+      "organizationId" : "124",
+      "staff" : {
+        "primaryTeacherId" : "1082"
+      },
+      "students" : [ ],
+      "lowGrade" : "2",
+      "highGrade" : "2",
+      "active" : true,
+      "studentAuthenticationMethod" : {
+        "type" : "easyLogin",
+        "enabled" : false,
+        "requirePassword" : false
+      },
+      "identifiers" : { },
+      "id" : "97",
+      "nickname" : "TWD"
+    }, {
+      "organizationId" : "124",
+      "staff" : {
+        "primaryTeacherId" : "1082"
+      },
+      "students" : [ ],
+      "lowGrade" : "7",
+      "highGrade" : "7",
+      "active" : true,
+      "studentAuthenticationMethod" : {
+        "type" : "easyLogin",
+        "enabled" : false,
+        "requirePassword" : false
+      },
+      "identifiers" : { },
+      "id" : "98",
+      "nickname" : "Math Lab"
+    } ]
+  },
+  "sessionContext" : {
+    "sessionType" : "digitalplatform",
+    "sessionToken" : "SC8R6GAODOBQ14IQEP8JDJ37IN"
+  }
+}

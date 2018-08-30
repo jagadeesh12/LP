@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.scholastic.intl</groupId>
+	<artifactId>litprotest</artifactId>
+	<version>1.10-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+
+	<scm>
+		<connection>scm:git:https://github.com/ScholasticInc/intl-litpro.git</connection>
+		<developerConnection>scm:git:https://github.com/ScholasticInc/intl-litpro.git</developerConnection>
+		<url>scm:git:https://github.com/ScholasticInc/intl-litpro.git</url>
+		<tag>litpro-parent-1.4.2</tag>
+	</scm>
+
+
+	<name>Test Automation and Integration Project</name>
+	<description>This Project hosts Cucumber-Selenium-TestNG Automation Tests for ATDD</description>
+	<properties>
+		<version.cucumber>1.2.5</version.cucumber>
+		<version.surefire>2.17</version.surefire>
+		<version.slf4j>1.6.6</version.slf4j>
+		<log4j.log4j.version>1.2.17</log4j.log4j.version>
+		<testNG.suiteXmlFile>config/vikramtesting.xml</testNG.suiteXmlFile>
+<!--		<testNG.suiteXmlFile>config/regression-qaChrome_NOSAUCLAB.xml</testNG.suiteXmlFile>-->
+		<org.hamcrest.hamcrest-library.version>1.3</org.hamcrest.hamcrest-library.version>
+		<info.cukes.cucumber-jvm-deps.version>1.0.5</info.cukes.cucumber-jvm-deps.version>
+		<org.hamcrest.hamcrest-library.version>1.3</org.hamcrest.hamcrest-library.version>
+		<org.codehaus.mojo.exec-maven-plugin.version>1.2.1</org.codehaus.mojo.exec-maven-plugin.version>
+		<maven.build.timestamp.format>yyyy-MM-dd_HH-mm-ss</maven.build.timestamp.format>
+		<outputdir>results/${maven.build.timestamp}</outputdir>
+		<buildid>${outputdir}/cucumber</buildid>
+
+		<!-- Override on your local maven run configuration if required -->
+		<skip.automation.tests>false</skip.automation.tests>
+		<skip.download.binary.server>true</skip.download.binary.server>
+
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.sf.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>2.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.4.192</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.jayway.restassured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>2.9.0</version>
+		</dependency>
+		<!-- <dependency> <groupId>com.scholastic.torque</groupId> <artifactId>TorqueFramework</artifactId> 
+			<version>0.0.1-SNAPSHOT</version> </dependency> -->
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>${version.slf4j}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-configuration</groupId>
+			<artifactId>commons-configuration</artifactId>
+			<version>1.7</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.10</version>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.9.10</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>2.53.1</version>
+			<exclusions>
+				<exclusion>
+					<groupId>javax.servlet</groupId>
+					<artifactId>servlet-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.saucelabs</groupId>
+			<artifactId>saucerest</artifactId>
+			<version>1.0.27</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>2.53.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>2.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-jvm-deps</artifactId>
+			<version>${info.cukes.cucumber-jvm-deps.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.thoughtworks.xstream</groupId>
+					<artifactId>xstream</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.googlecode.java-diff-utils</groupId>
+					<artifactId>diffutils</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>${version.cucumber}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.picocontainer</groupId>
+			<artifactId>picocontainer</artifactId>
+			<version>2.14.2</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${version.cucumber}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+		 <groupId>com.scholastic.torque</groupId>
+		 <artifactId>TorqueFramework</artifactId>
+		 <version>1.2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>xml-apis</groupId>
+			<artifactId>xml-apis</artifactId>
+			<version>2.0.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+			<version>2.8.0</version>
+		</dependency>
+		<dependency>
+			<groupId> org.hamcrest</groupId>
+			<artifactId>hamcrest-all</artifactId>
+			<version>1.3</version>
+		</dependency>
+		<dependency>
+			<!-- Required by JSONReportMerger -->
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.core</groupId>
+			<artifactId>jersey-client</artifactId>
+			<version>2.22</version>
+		</dependency>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-jxpath</groupId>
+			<artifactId>commons-jxpath</artifactId>
+			<version>1.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20160810</version>
+		</dependency>
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>2.9.1</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.log4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sikulix</groupId>
+			<artifactId>sikulixapi</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.plexus</groupId>
+			<artifactId>plexus-utils</artifactId>
+			<version>1.5.7</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.sikuli/sikuli-api -->
+		<dependency>
+			<groupId>org.sikuli</groupId>
+			<artifactId>sikuli-api</artifactId>
+			<version>1.2.0</version>
+		</dependency>	
+	</dependencies>
+
+	<build>
+		<finalName>litpro-test</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>${version.surefire}</version>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+				<executions>
+					<execution>
+						<id>JUnit-execution</id>
+						<phase>test</phase>
+						<goals>
+							<goal>test</goal>
+						</goals>
+						<configuration>
+							<skip>${skip.integration.tests}</skip>
+							<!-- used to skip TestNg profider -->
+							<testNGArtifactName>dev:null</testNGArtifactName>
+							<excludes>
+								<exclude>%regex[.*CucumberFeatureSuite.*]</exclude>
+							</excludes>
+						</configuration>
+					</execution>
+					<execution>
+						<id>TestNg-execution</id>
+						<phase>test</phase>
+						<goals>
+							<goal>test</goal>
+						</goals>
+						<configuration>
+							<!-- overwrite skip from default config -->
+							<skip>${skip.automation.tests}</skip>
+
+							<includes>
+								<include>%regex[.*CucumberFeatureSuite.*]</include>
+							</includes>
+							<!-- used to skip JUnit profider -->
+							<junitArtifactName>dev:null</junitArtifactName>
+							<!-- to continue on next execution in case of failures here -->
+							<systemPropertyVariables>
+								<buildid>${buildid}</buildid>
+								<outputdir>${outputdir}</outputdir>
+							</systemPropertyVariables>
+							<suiteXmlFiles>
+								<suiteXmlFile>${testNG.suiteXmlFile}</suiteXmlFile>
+							</suiteXmlFiles>
+							<reuseForks>false</reuseForks>
+							<argLine>-Duser.language=en</argLine>
+							<argLine>-Xmx1024m</argLine>
+							<argLine>-XX:MaxPermSize=256m</argLine>
+							<argLine>-Dfile.encoding=UTF-8</argLine>
+							<useFile>false</useFile>
+							<testFailureIgnore>true</testFailureIgnore>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>${org.codehaus.mojo.exec-maven-plugin.version}</version>
+				<executions>
+					<execution>
+						<id>merge-cucumber-json-reports</id>
+						<phase>post-integration-test</phase>
+						<goals>
+							<goal>java</goal>
+						</goals>
+						<configuration>
+							<classpathScope>test</classpathScope>
+							<mainClass>cucumber.jvm.parallel.JSONReportMerger</mainClass>
+							<arguments>
+								<argument>${buildid}/</argument>
+							</arguments>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>net.masterthought</groupId>
+				<artifactId>maven-cucumber-reporting</artifactId>
+				<version>3.6.0</version>
+				<executions>
+					<execution>
+						<id>execution</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+						<configuration>
+							<projectName>cucumber-testng-parallel-selenium</projectName>
+							<outputDirectory>${outputdir}/integrated-reports</outputDirectory>
+							<cucumberOutput>${buildid}/cucumber.json</cucumberOutput>
+							<enableFlashCharts>false</enableFlashCharts>
+							<skippedFails>false</skippedFails>
+							<testFailureIgnore>false</testFailureIgnore>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<!-- The below maven plugin that will download the WebDriver stand alone 
+				server binaries for use in your mavenised Selenium project. -->
+			<plugin>
+				<groupId>com.lazerycode.selenium</groupId>
+				<artifactId>driver-binary-downloader-maven-plugin</artifactId>
+				<version>1.0.10</version>
+				<configuration>
+					<!-- root directory that downloaded driver binaries will be stored in -->
+					<rootStandaloneServerDirectory>servers/selenium_standalone</rootStandaloneServerDirectory>
+					<!-- Where you want to store downloaded zip files -->
+					<downloadedZipFileDirectory>servers/downloaded_zip_files</downloadedZipFileDirectory>
+					<!-- Location of a custom repository map -->
+					<customRepositoryMap>servers/RepositoryMap.xml</customRepositoryMap>
+					<!-- This will ensure that the plugin only downloads binaries for the 
+						current OS, this will override anything specified in the <operatingSystems> 
+						configuration -->
+					<onlyGetDriversForHostOperatingSystem>true</onlyGetDriversForHostOperatingSystem>
+					<!-- Operating systems you want to download binaries for (Only valid 
+						options are: windows, linux, osx) -->
+					<operatingSystems>
+						<windows>true</windows>
+						<linux>true</linux>
+						<mac>true</mac>
+					</operatingSystems>
+					<!-- Download 32bit binaries -->
+					<thirtyTwoBitBinaries>false</thirtyTwoBitBinaries>
+					<!-- Download 64bit binaries -->
+					<sixtyFourBitBinaries>true</sixtyFourBitBinaries>
+					<!-- If set to false will download every version available (Other filters 
+						will be taken into account -->
+					<onlyGetLatestVersions>true</onlyGetLatestVersions>
+					<!-- Provide a list of drivers and binary versions to download (this 
+						is a map so only one version can be specified per driver) -->
+					<getSpecificExecutableVersions>
+						<googlechrome>2.23</googlechrome>
+						<internetexplorer>2.53.1</internetexplorer>
+					</getSpecificExecutableVersions>
+					<!-- Throw an exception if any specified binary versions that the plugin 
+						tries to download do not exist -->
+					<throwExceptionIfSpecifiedVersionIsNotFound>false</throwExceptionIfSpecifiedVersionIsNotFound>
+					<!-- Number of times to attempt to download each file -->
+					<fileDownloadRetryAttempts>1</fileDownloadRetryAttempts>
+					<!-- Number of ms to wait before timing out when trying to connect to 
+						remote server to download file -->
+					<fileDownloadConnectTimeout>15000</fileDownloadConnectTimeout>
+					<!-- Number of ms to wait before timing out when trying to read file 
+						from remote server -->
+					<fileDownloadReadTimeout>15000</fileDownloadReadTimeout>
+					<!-- Overwrite any existing binaries that have been downloaded and extracted -->
+					<overwriteFilesThatExist>false</overwriteFilesThatExist>
+					<!-- Check file hashes of downloaded files. Default: true -->
+					<checkFileHashes>true</checkFileHashes>
+					<!-- auto detect system proxy to use when downloading files -->
+					<!-- To specify an explicit proxy set the environment variables http.proxyHost 
+						and http.proxyPort -->
+					<useSystemProxy>true</useSystemProxy>
+				</configuration>
+
+				<executions>
+					<execution>
+						<phase>none</phase>
+						<goals>
+							<goal>selenium</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

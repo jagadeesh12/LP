@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- This xml file is to run the tests locally during development --><suite allow-return-values="false" configfailurepolicy="skip" data-provider-thread-count="10" group-by-instances="false" guice-stage="DEVELOPMENT" junit="false" name="Reading Pro Test Suite" parallel="tests" preserve-order="true" skipfailedinvocationcounts="false" thread-count="1">
+
+	<test allow-return-values="false" group-by-instances="false" junit="false" name="@CSrep" preserve-order="true" skipfailedinvocationcounts="false">
+		<parameter name="features" value="features/LitproModiefied"/>
+		<parameter name="driver.name" value="Firefox"/>
+		<parameter name="glue" value="com.scholastic.intl.litpro.test.automation"/>
+		<parameter name="tags" value="@CSrep"/>
+		<parameter name="driver.capabilities" value="{'version':'47.0','platform':'OS X 10.11'}"/>
+		<parameter name="url" value="https://educator-home.slz.cnpereading.com/slz-custportal/#/login"/>
+		<classes>
+			<class name="com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite"/>
+		</classes>
+	</test>
+	<test allow-return-values="false" group-by-instances="false" junit="false" name="@datacreationreports" preserve-order="true" skipfailedinvocationcounts="false">
+		<parameter name="features" value="features/LitproModiefied"/>
+		<parameter name="driver.name" value="Firefox"/>
+		<parameter name="glue" value="com.scholastic.intl.litpro.test.automation"/>
+		<parameter name="tags" value="@regressionlpreportdatacreation"/>
+		<parameter name="driver.capabilities" value=""/>
+		<parameter name="url" value="https://stage-slz01.scholasticlearningzone.com/slz-portal/#/login3/GBRQF87"/>
+		<classes>
+			<class name="com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite"/>
+		</classes>
+	</test>
+</suite>

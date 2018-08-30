@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<testdata>
+	<homepage>
+		<mainTabs>
+			<products>PRODUCTS</products>
+			<classes>CLASSES</classes>
+			<students>STUDENTS</students>
+		</mainTabs>
+		<productTabs>
+			<addMoreProducts>Add more products</addMoreProducts>
+		</productTabs>
+		<classesTabs>
+			<createClass>CREATE CLASS</createClass>
+		</classesTabs>
+		<studentTabs>
+			<addStudents>Add Students</addStudents>
+			<printInstructions>Print Instructions</printInstructions>
+		</studentTabs>
+	</homepage>
+	<advancesearch>
+		<designer>
+			<serachtext>Alex</serachtext>
+		</designer>
+		<artdirector>
+			<serachtext>John</serachtext>
+		</artdirector>
+	</advancesearch>
+	<users>
+		<user>
+			<name>John</name>
+			<password>opentextDevJohn</password>
+			<firstname>John</firstname>
+			<lastname>Willams</lastname>
+		</user>
+		<user>
+			<name>Jessica\;</name>
+			<password>opentextDevJessica</password>
+			<access>a;b;c</access>
+			<access>d</access>
+			<access>e</access>
+			<access>f</access>
+			<role>designer;</role>
+		</user>
+		<user>
+			<name>Jhon</name>
+			<password>opentextDevJhon</password>
+			<access>x;y;z</access>
+			<access>1</access>
+			<access>2</access>
+			<access>3</access>
+			<role>designer;</role>
+			<user>
+				<name>Jessica</name>
+				<password>notReporter</password>
+				<access>a;b;c</access>
+
+			</user>
+		</user>
+	</users>
+	<default>
+		<user>
+			<name>Jessica</name>
+			<password>opentextDevJessica</password>
+			<access>a;b;c</access>
+			<access>d</access>
+			<access>e</access>
+			<access>f</access>
+			<role>a;b</role>
+
+		</user>
+	</default>
+	<designer>
+		<user>
+			<name></name>
+			<password></password>
+		</user>
+	</designer>
+	<artdirector>
+		<user>
+			<name></name>
+			<password></password>
+		</user>
+	</artdirector>
+	<sccg>
+		<user>
+			<name>testdevuser3</name>
+			<password>otsch</password>
+		</user>
+	</sccg>
+	<designersccg>
+		<user>
+			<name></name>
+			<password></password>
+		</user>
+	</designersccg>
+
+</testdata>

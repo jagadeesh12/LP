@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- This xml file is to run the tests locally during development -->
+<suite name="Reading Pro Test Suite" thread-count="4"
+	parallel="tests">
+	<!-- example test configuration -->
+		<test name="RP-SDM-Nav-Bar">
+		<parameter name="features" value="features/ReadingPro" />
+		<parameter name="driver.name" value="Firefox"></parameter>
+		<parameter name="glue" value="com.scholastic.intl.litpro.test.automation.stepdefs" />
+		<parameter name="tags" value="@RP" />
+		<parameter name="driver.capabilities" value="{'version':'49.0','platform':'Windows 10'}"></parameter>
+		<classes>
+			<class name="com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite" />
+		</classes>
+	</test>
+	<test name="RPL-SDM-Nav-Bar">
+		<parameter name="features" value="features/ReadingPro" />
+		<parameter name="driver.name" value="Firefox"></parameter>
+		<parameter name="glue" value="com.scholastic.intl.litpro.test.automation.stepdefs" />
+		<parameter name="tags" value="@RPL" />
+		<parameter name="driver.capabilities" value="{'version':'49.0','platform':'Windows 10'}"></parameter>
+		<classes>
+			<class name="com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite" />
+		</classes>
+	</test>
+</suite>

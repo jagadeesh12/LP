@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- This xml file is to run the tests locally during development -->
+<suite name="Reading Pro Test Suite" thread-count="5"
+        parallel="tests">
+        <!-- example test configuration -->
+                <test name="@Flow-One0">
+                <parameter name="features" value="features/LitproModiefied" />
+                <parameter name="driver.name" value="Chrome"></parameter>
+                <parameter name="glue" value="com.scholastic.intl.litpro.test.automation" />
+                <parameter name="tags" value="@regressionlpset1" />
+                <parameter name="driver.capabilities" value="{'version':'47.0','platform':'OS X 10.11'}"></parameter>
+                <parameter name="url" value="https://blue-slz-z1.scholasticlearningzone.com/slz-portal/#/login3/AIA473Q" />
+                <classes>
+                        <class name="com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite" />
+                </classes>
+        </test>
+
+
+   <test name="@Flow-One1">
+                <parameter name="features" value="features/LitproModiefied" />
+                <parameter name="driver.name" value="Chrome"></parameter>
+                <parameter name="glue" value="com.scholastic.intl.litpro.test.automation" />
+                <parameter name="tags" value="@regressionlpset2" />
+                <parameter name="driver.capabilities" value="{'version':'47.0','platform':'OS X 10.11'}"></parameter>
+                <parameter name="url" value="https://blue-slz-z1.scholasticlearningzone.com/slz-portal/#/login3/AIAYD4R" />
+                <classes>
+                        <class name="com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite" />
+                </classes>
+        </test>
+ <test name="@Flow-One2">
+                <parameter name="features" value="features/LitproModiefied" />
+                <parameter name="driver.name" value="Chrome"></parameter>
+                <parameter name="glue" value="com.scholastic.intl.litpro.test.automation" />
+                <parameter name="tags" value="@regressionlpset3" />
+                <parameter name="driver.capabilities" value="{'version':'47.0','platform':'OS X 10.11'}"></parameter>
+                <parameter name="url" value="https://blue-slz-z1.scholasticlearningzone.com/slz-portal/#/login3/AIA2C7F" />
+                <classes>
+                        <class name="com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite" />
+                </classes>
+        </test>
+ <test name="@Flow-One3">
+                <parameter name="features" value="features/LitproModiefied" />
+                <parameter name="driver.name" value="Chrome"></parameter>
+                <parameter name="glue" value="com.scholastic.intl.litpro.test.automation" />
+                <parameter name="tags" value="@regressionlpset4" />
+                <parameter name="driver.capabilities" value="{'version':'47.0','platform':'OS X 10.11'}"></parameter>
+                <parameter name="url" value="https://blue-slz-z1.scholasticlearningzone.com/slz-portal/#/login3/AIAG6VQ" />
+                <classes>
+                        <class name="com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite" />
+                </classes>
+        </test>
+
+ <test name="@Flow-One4">
+                <parameter name="features" value="features/LitproModiefied" />
+                <parameter name="driver.name" value="Chrome"></parameter>
+                <parameter name="glue" value="com.scholastic.intl.litpro.test.automation" />
+                <parameter name="tags" value="@regressionlpset5" />
+                <parameter name="driver.capabilities" value="{'version':'47.0','platform':'OS X 10.11'}"></parameter>
+                <parameter name="url" value="https://blue-slz-z1.scholasticlearningzone.com/slz-portal/#/login3/AIATTD6" />
+                <classes>
+                        <class name="com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite" />
+                </classes>
+        </test>
+
+
+
+<test name="@Flow-One5">
+                <parameter name="features" value="features/LitproModiefied" />
+                <parameter name="driver.name" value="Chrome"></parameter>
+                <parameter name="glue" value="com.scholastic.intl.litpro.test.automation" />
+                <parameter name="tags" value="@regressionlpset6" />
+                <parameter name="driver.capabilities" value="{'version':'47.0','platform':'OS X 10.11'}"></parameter>
+                <parameter name="url" value="https://blue-slz-z2.scholasticlearningzone.com/slz-portal/#/login3/BRNKW95" />
+                <classes>
+                        <class name="com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite" />
+                </classes>
+        </test>
+
+</suite>
+

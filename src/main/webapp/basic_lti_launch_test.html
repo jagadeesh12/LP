@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Basic LTI Launch</title>
+<link rel="shortcut icon" href="http://www.scholastic.com/teachers/sites/default/files/scholastic_favicon.ico"
+	type="image/x-icon" />
+</head>
+<body>
+
+	<img src="images/scholastic.png" alt="Scholastic">
+
+	<br />
+	<br />
+	<h3>Static LTI Basic Launch Test Page (right click and view page source code for details)</h3>
+
+	<table border=0 cellpadding=10>
+		<tr>
+			<td><strong>LitPro 1.9 Development Environment</strong> <br /> As a Student with Custom LTI Parameter
+				<form action="http://127.0.0.1:8080/litpro" method="POST">
+
+					<input type="hidden" name="context_id" value="9">
+					<input type="hidden" name="custom_country_code" value="USA">
+					
+					<input type="hidden" name="custom_dp_launch" value='{
+  "identifiers" : {
+    "studentId" : "1084"
+  },
+  "orgContext" : {
+    "organization" : {
+      "id" : "124",
+      "name" : "PS 21",
+      "orgType" : "school",
+      "lastModifiedDate" : "2016-02-18T18:11:32.000-0500"
+    },
+    "entitlements" : [ {
+      "id" : "1",
+      "name" : "Assessment",
+      "applicationCode" : "assessment",
+      "url" : "http://sda-dev.scholastic.com/litpro",
+      "thumbnail" : "http://digital-platform-builds.s3.amazonaws.com/dp/media/applications/thumbnails/placeholder/Assessment.png",
+      "active" : true
+    }, {
+      "id" : "2",
+      "name" : "eBooks",
+      "applicationCode" : "ebooks",
+      "url" : "http://sda-dev.scholastic.com/LitProLib/",
+      "thumbnail" : "http://digital-platform-builds.s3.amazonaws.com/dp/media/applications/thumbnails/placeholder/eBook.png",
+      "active" : true
+    } ],
+    "currentSchoolCalendar" : {
+      "description" : "2015-16",
+      "startDate" : "2015-07-31T20:00:00.000-0400",
+      "endDate" : "2016-07-30T20:00:00.000-0400"
+    },
+    "roles" : [ "student" ]
+  },
+  "launchContext" : {
+    "application" : {
+      "id" : "1",
+      "name" : "Assessment",
+      "applicationCode" : "assessment",
+      "url" : "http://sda-dev.scholastic.com/litpro",
+      "thumbnail" : "http://digital-platform-builds.s3.amazonaws.com/dp/media/applications/thumbnails/placeholder/Assessment.png",
+      "active" : true
+    },
+    "productEntitlements" : [ {
+      "id" : "3",
+      "name" : "eBooks",
+      "productCode" : "LPLHSUS",
+      "applicationId" : "2",
+      "active" : true,
+      "includesStudentAccess" : true
+    }, {
+      "id" : "1",
+      "name" : "Assessment",
+      "productCode" : "Litpro",
+      "applicationId" : "1",
+      "active" : true,
+      "includesStudentAccess" : true
+    } ],
+    "role" : "student"
+  },
+  "studentContext" : {
+    "grade" : {
+      "scholasticGradeCode" : "2",
+      "gradeSystemCode" : "USA",
+      "localGradeName" : "Grade 2"
+    },
+    "enrollments" : [ {
+      "id" : "97",
+      "organizationId" : "124",
+      "staff" : {
+        "primaryTeacherId" : "1082"
+      },
+      "students" : [ ],
+      "nickname" : "TWD",
+      "lowGrade" : "2",
+      "highGrade" : "2",
+      "active" : true,
+      "studentAuthenticationMethod" : {
+        "type" : "easyLogin",
+        "enabled" : false,
+        "requirePassword" : false
+      },
+      "identifiers" : { },
+      "displayName" : "TWD"
+    } ]
+  },
+  "sessionContext" : {
+    "sessionType" : "DAS",
+    "sessionToken" : "5f5bfdbd-393a-4122-8727-a9cc52f4201f"
+  }
+}'>
+
+					<input type="hidden" name="custom_timezone_id" value="US/Eastern">
+
+					<input type="hidden" name="launch_presentation_locale" value="en_us">
+
+					<input type="hidden" name="lis_person_name_family" value="Grimes">
+					<input type="hidden" name="lis_person_name_full" value="Rick Grimes">
+					<input type="hidden" name="lis_person_name_given" value="Rick">
+
+					<input type="hidden" name="lti_message_type" value="basic-lti-launch-request">
+					<input type="hidden" name="lti_version" value="LTI-1p0">
+
+					<input type="hidden" name="oauth_consumer_key" value="l0JkeOfrC2g2ALqB1dtghOjuxP8a">
+					<input type="hidden" name="oauth_nonce" value="122607740099199">
+					<input type="hidden" name="oauth_signature" value="7+v/guuyk0djGFw5p9dN8ba2NgQ=">
+					<input type="hidden" name="oauth_signature_method" value="HMAC-SHA1">
+					<input type="hidden" name="oauth_timestamp" value="1460772715">
+					<input type="hidden" name="oauth_version" value="1.0">
+
+					<input type="hidden" name="roles" value="Student">
+
+					<input type="hidden" name="tool_consumer_info_product_family_code" value="ScholasticDigitalPlatform">
+					<input type="hidden" name="tool_consumer_info_version" value="2013111804.04">
+
+					<input type="hidden" name="tool_consumer_instance_name" value="dev1">
+
+					<input type="hidden" name="user_id" value="1084">
+
+					<input type="hidden" name="launchUrl" value="http://sda-dev.scholastic.com/litpro">
+
+					<input id="student" type="submit" id="search-submit" value=""
+						style="background-image: url(images/literacy_pro.png); border: solid 0px #000000 <span class='hexPreview' style='background-color: #000000'>&nbsp;</span>; width: 110px; height: 106px; background-color: transparent;" />
+
+				</form> <br /></td>
+
+			<td>As a Teacher with Custom LTI Parameter
+			
+				<form action="http://127.0.0.1:8080/litpro" method="POST">
+
+					<input type="hidden" name="context_id" value="9">
+					<input type="hidden" name="custom_country_code" value="USA">
+					
+					<input type="hidden" name="custom_dp_launch" value='{
+  "identifiers" : {
+    "staffId" : "1082"
+  },
+  "orgContext" : {
+    "organization" : {
+      "id" : "124",
+      "name" : "PS 21",
+      "orgType" : "school",
+      "lastModifiedDate" : "2016-02-18T18:11:32.000-0500"
+    },
+    "entitlements" : [ {
+      "id" : "1",
+      "name" : "Litpro",
+      "url" : "http://sda-dev.scholastic.com/litpro",
+      "thumbnail" : "/resources/images/product_icons/litpro.png",
+      "active" : true
+    }, {
+      "id" : "2",
+      "name" : "Litpro Library",
+      "url" : "http://sda-dev.scholastic.com/LitProLib/",
+      "thumbnail" : "/resources/images/product_icons/litprolib.png",
+      "active" : true
+    } ],
+    "currentSchoolCalendar" : {
+      "description" : "School Calendar 2015",
+      "startDate" : "2015-07-31T20:00:00.000-0400",
+      "endDate" : "2016-07-30T20:00:00.000-0400"
+    },
+    "roles" : [ "teacher" ]
+  },
+  "launchContext" : {
+    "application" : {
+      "id" : "1",
+      "name" : "Litpro",
+      "url" : "http://sda-dev.scholastic.com/litpro",
+      "thumbnail" : "/resources/images/product_icons/litpro.png",
+      "active" : true
+    },
+    "productEntitlements" : [ {
+      "id" : "1",
+      "name" : "Litpro",
+      "productCode" : "Litpro",
+      "applicationId" : "1",
+      "active" : true,
+      "includesStudentAccess" : true
+    } ],
+    "role" : "teacher"
+  },
+  "teacherContext" : {
+    "classes" : [ {
+      "organizationId" : "124",
+      "staff" : {
+        "primaryTeacherId" : "1082"
+      },
+      "students" : [ ],
+      "lowGrade" : "2",
+      "highGrade" : "2",
+      "active" : true,
+      "studentAuthenticationMethod" : {
+        "type" : "easyLogin",
+        "enabled" : false,
+        "requirePassword" : false
+      },
+      "identifiers" : { },
+      "id" : "97",
+      "nickname" : "TWD"
+    }, {
+      "organizationId" : "124",
+      "staff" : {
+        "primaryTeacherId" : "1082"
+      },
+      "students" : [ ],
+      "lowGrade" : "7",
+      "highGrade" : "7",
+      "active" : true,
+      "studentAuthenticationMethod" : {
+        "type" : "easyLogin",
+        "enabled" : false,
+        "requirePassword" : false
+      },
+      "identifiers" : { },
+      "id" : "98",
+      "nickname" : "Math Lab"
+    } ]
+  },
+  "sessionContext" : {
+    "sessionType" : "digitalplatform",
+    "sessionToken" : "SC8R6GAODOBQ14IQEP8JDJ37IN"
+  }
+}'>
+
+					<input type="hidden" name="custom_timezone_id" value="US/Eastern">
+
+					<input type="hidden" name="launch_presentation_locale" value="en_us">
+
+					<input type="hidden" name="lis_person_contact_email_primary" value="teacher@ps21.org">
+
+					<input type="hidden" name="lis_person_name_family" value="Grande">
+					<input type="hidden" name="lis_person_name_full" value="Ariana Grande">
+					<input type="hidden" name="lis_person_name_given" value="Ariana">
+
+					<input type="hidden" name="lti_message_type" value="basic-lti-launch-request">
+					<input type="hidden" name="lti_version" value="LTI-1p0">
+
+					<input type="hidden" name="oauth_consumer_key" value="l0JkeOfrC2g2ALqB1dtghOjuxP8a">
+					<input type="hidden" name="oauth_nonce" value="2336180297473075389">
+					<input type="hidden" name="oauth_signature" value="6FcNhnTkOHh6jhLlf6ClyD2Y+jg=">
+					<input type="hidden" name="oauth_signature_method" value="HMAC-SHA1">
+					<input type="hidden" name="oauth_timestamp" value="1456280902">
+					<input type="hidden" name="oauth_version" value="1.0">
+
+					<input type="hidden" name="roles" value="Instructor">
+
+					<input type="hidden" name="tool_consumer_info_product_family_code" value="ScholasticDigitalPlatform">
+					<input type="hidden" name="tool_consumer_info_version" value="2013111804.04">
+
+					<input type="hidden" name="tool_consumer_instance_name" value="dev1">
+
+					<input type="hidden" name="user_id" value="staff1082">
+
+					<input type="hidden" name="launchUrl" value="http://sda-dev.scholastic.com/litpro">
+
+					<input id="Teacher" type="submit" id="search-submit" value=""
+						style="background-image: url(images/literacy_pro.png); border: solid 0px #000000 <span class='hexPreview' style='background-color: #000000'>&nbsp;</span>; width: 110px; height: 106px; background-color: transparent;" />
+				</form>
+			</td>
+
+			<td>As a Scholastic Administrator with Custom LTI Parameter
+				<form action="http://127.0.0.1:8080/litpro/" method="POST">
+
+
+					<input type="hidden" name="lti_message_type" value="basic-lti-launch-request">
+					<input type="hidden" name="lti_version" value="LTI-1p0">
+					<input type="hidden" name="lis_person_name_family" value="Solo">
+					<input type="hidden" name="lis_person_name_given" value="Han">
+					<input type="hidden" name="lis_person_name_full" value="Han Solo">
+					<input type="hidden" name="lis_person_contact_email_primary" value="teacher@ps41.org">
+					<input type="hidden" name="user_id" value="staff8">
+					<input type="hidden" name="roles" value="Administrator">
+					<input type="hidden" name="oauth_consumer_key" value="secret">
+					<input type="hidden" name="oauth_nonce" value="-2575755403082259399">
+					<input type="hidden" name="oauth_signature" value="0qfFJJykfyPzKIs0/xhHDKuWSjQ=">
+					<input type="hidden" name="oauth_signature_method" value="HMAC-SHA1">
+					<input type="hidden" name="oauth_timestamp" value="1450075241">
+					<input type="hidden" name="oauth_version" value="1.0">
+					<input type="hidden" name="tool_consumer_info_product_family_code" value="ScholasticDigitalPlatform">
+					<input type="hidden" name="tool_consumer_info_version" value="2013111804.04">
+					<input type="hidden" name="tool_consumer_instance_url" value="http://dp-api-dev1.scholastic-labs.io">
+					<input type="hidden" name="custom_timezone_id" value="US/Eastern">
+					<input type="hidden" name="custom_country_code" value="USA">
+					<input type="hidden" name="launch_presentation_locale" value="en">
+					<input type="hidden" name="context_id" value="9">
+
+					<script>
+						var profile = {
+							"identifiers" : {
+								"staffId" : "8"
+							},
+							"orgContext" : {
+								"organization" : {
+									"id" : "1",
+									"name" : "DayBreakMiddleSchool",
+									"parent" : "1",
+									"orgType" : "school",
+									"identifiers" : {
+										"ucn" : "600016038",
+										"sourceId" : "56a7bd757aac5001000007ce",
+										"source" : "Clever"
+									},
+									"lastModifiedDate" : "2016-01-29T05: 47: 00.000-0500"
+								},
+								"entitlements" : [
+										{
+											"id" : "1",
+											"name" : "Litpro",
+											"url" : "http: //sda-dev.scholastic.com/litpro",
+											"thumbnail" : "/resources/images/product_icons/litpro.png",
+											"active" : true
+										},
+										{
+											"id" : "2",
+											"name" : "LitproLibrary",
+											"url" : "http: //sda-dev.scholastic.com/LitProLib/",
+											"thumbnail" : "/resources/images/product_icons/litprolib.png",
+											"active" : true
+										},
+										{
+											"id" : "3",
+											"name" : "PR1MEMathematics",
+											"url" : "http: //sda-dev.scholastic.com/PIWBApp/",
+											"thumbnail" : "/resources/images/product_icons/primemath.png",
+											"active" : true
+										} ],
+								"currentSchoolCalendar" : {
+									"description" : "SchoolCalendar2015",
+									"startDate" : "2015-07-31T20: 00: 00.000-0400",
+									"endDate" : "2016-07-30T20: 00: 00.000-0400"
+								},
+								"roles" : [ "scholastic-admin" ]
+							},
+							"launchContext" : {
+								"application" : {
+									"id" : "1",
+									"name" : "Litpro",
+									"url" : "http: //sda-dev.scholastic.com/litpro",
+									"thumbnail" : "/resources/images/product_icons/litpro.png",
+									"active" : true
+								},
+								"productEntitlements" : [ {
+									"id" : "1",
+									"name" : "Litpro",
+									"productCode" : "Litpro",
+									"applicationId" : "1",
+									"active" : true,
+									"includesStudentAccess" : true
+								} ],
+								"role" : "teacher"
+							},
+							"teacherContext" : {
+								"classes" : [ {
+									"organizationId" : "1",
+									"staff" : {
+										"primaryTeacherId" : "8"
+									},
+									"lowGrade" : "3",
+									"highGrade" : "3",
+									"studentAuthenticationMethod" : {
+										"type" : "easyLogin",
+										"enabled" : true,
+										"requirePassword" : false
+									},
+									"id" : "3",
+									"nickname" : "PignataroClass"
+								}, {
+									"organizationId" : "1",
+									"staff" : {
+										"primaryTeacherId" : "8"
+									},
+									"lowGrade" : "3",
+									"highGrade" : "5",
+									"studentAuthenticationMethod" : {
+										"type" : "easyLogin",
+										"enabled" : false,
+										"requirePassword" : false
+									},
+									"id" : "26",
+									"nickname" : "BusinessDemoTest"
+								} ]
+							},
+							"sessionContext" : {
+								"sessionType" : "digitalplatform",
+								"sessionToken" : "6R5U54R02VH2606BNGPJ2HBJ9L"
+							}
+						};
+
+						document
+								.write('<input type="hidden" name="custom_dp_launch" value=\''
+										+ JSON.stringify(profile) + '\'>');
+					</script>
+
+					<input id="teacher" type="submit" id="search-submit" value=""
+						style="background-image: url(images/literacy_pro.png); border: solid 0px #000000 <span class='hexPreview' style='background-color: #000000'>&nbsp;</span>; width: 110px; height: 106px; background-color: transparent;" />
+				</form>
+			</td>
+
+
+		</tr>
+
+	</table>
+
+
+</body>
+</html>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0"
+	name="Demandware" parallel="tests">
+	<parameter name="remote.driver.url" value="http://127.0.0.1:4723/wd/hub" />
+	<parameter name="glue" value="com.scholastic.intl.litpro.test.automation" />
+	<parameter name="tags" value="@lpfix1" />
+	<test name="Test">
+		<parameter name="features" value="features/LitproModiefied" />
+		<parameter name="scenario" value="scenario" />
+		<parameter name="driver.capabilities"
+			value="{'platformName': 'Android','platformVersion':'5.0','deviceName':'1232cea6','browserName':'Chrome'} " />
+		<parameter name="driver.name" value="Remote" />
+		<classes>
+			<class
+				name="com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite" />
+		</classes>
+	</test> <!-- New teacher registration with reading club - RCO-2088 -->
+
+</suite> <!-- Demandware -->

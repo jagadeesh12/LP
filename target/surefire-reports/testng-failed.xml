@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Reading Pro Test Suite]" parallel="tests">
+  <parameter name="features" value="features/LitproLibrary"/>
+  <parameter name="glue" value="com.scholastic.intl.litpro.test.automation"/>
+  <parameter name="driver.name" value="Chrome"/>
+  <parameter name="driver.capabilities" value="{&#039;version&#039;:&#039;47.0&#039;,&#039;platform&#039;:&#039;OS X 10.11&#039;}"/>
+  <parameter name="url" value="https://qa-slz2.scholasticlearningzone.com/slz-portal/#/login3/AUS2KTW"/>
+  <parameter name="tags" value="@vikram"/>
+  <test name="@vikram">
+    <parameter name="features" value="features/LitproLibrary"/>
+    <parameter name="glue" value="com.scholastic.intl.litpro.test.automation"/>
+    <parameter name="driver.name" value="Chrome"/>
+    <parameter name="driver.capabilities" value="{&#039;version&#039;:&#039;47.0&#039;,&#039;platform&#039;:&#039;OS X 10.11&#039;}"/>
+    <parameter name="url" value="https://qa-slz2.scholasticlearningzone.com/slz-portal/#/login3/AUS2KTW"/>
+    <parameter name="tags" value="@vikram"/>
+    <classes>
+      <class name="com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite"/>
+    </classes>
+  </test> <!-- @vikram -->
+  <test name="@vikram(failed)" parallel="tests">
+    <parameter name="features" value="features/LitproLibrary"/>
+    <parameter name="glue" value="com.scholastic.intl.litpro.test.automation"/>
+    <parameter name="driver.name" value="Chrome"/>
+    <parameter name="driver.capabilities" value="{&#039;version&#039;:&#039;47.0&#039;,&#039;platform&#039;:&#039;OS X 10.11&#039;}"/>
+    <parameter name="url" value="https://qa-slz2.scholasticlearningzone.com/slz-portal/#/login3/AUS2KTW"/>
+    <parameter name="tags" value="@vikram"/>
+    <classes>
+      <class name="com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite -->
+    </classes>
+  </test> <!-- @vikram(failed) -->
+</suite> <!-- Failed suite [Reading Pro Test Suite] -->

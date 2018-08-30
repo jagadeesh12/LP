@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Reading Pro Test Suite" thread-count="5" parallel="tests">
+	<test name="Set1">
+		<parameter name="sauce" value="true"></parameter>
+		<parameter name="sauce.username" value="nda_qe" />
+		<parameter name="sauce.access.key" value="8f338569-9711-4185-951d-b0e8abc45cc8" />
+		<parameter name="remote.driver.url"
+			value="http://nda_qe:8f338569-9711-4185-951d-b0e8abc45cc8@ondemand.saucelabs.com:80/wd/hub" />
+
+		<parameter name="features" value="features/LitproModiefied" />
+		<parameter name="driver.name" value="Chrome"></parameter>
+		<parameter name="glue"
+			value="com.scholastic.intl.litpro.test.automation.stepdefs" />
+		<parameter name="tags" value="@regressionlpset1" />
+		<parameter name="driver.capabilities"
+			value="{'tunnelIdentifier':'digitalAppstunnel','version':'50.0','platform':'Windows 10'}"></parameter>
+		<parameter name="url"
+			value="https://qa-slz2.scholasticlearningzone.com/slz-portal/#/login3/INDJR74" />
+		<classes>
+			<class
+				name="com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite" />
+		</classes>
+	</test>
+	<test name="Set2">
+		<parameter name="sauce" value="true"></parameter>
+		<parameter name="sauce.username" value="nda_qe" />
+		<parameter name="sauce.access.key" value="8f338569-9711-4185-951d-b0e8abc45cc8" />
+		<parameter name="remote.driver.url"
+			value="http://nda_qe:8f338569-9711-4185-951d-b0e8abc45cc8@ondemand.saucelabs.com:80/wd/hub" />
+
+		<parameter name="features" value="features/LitproModiefied" />
+		<parameter name="driver.name" value="Chrome"></parameter>
+		<parameter name="glue"
+			value="com.scholastic.intl.litpro.test.automation.stepdefs" />
+		<parameter name="tags" value="@regressionlpset2" />
+		<parameter name="driver.capabilities"
+			value="{'tunnelIdentifier':'digitalAppstunnel','version':'50.0','platform':'Windows 10'}"></parameter>
+		<parameter name="url"
+			value="https://qa-slz2.scholasticlearningzone.com/slz-portal/#/login3/INDQ95J" />
+		<classes>
+			<class
+				name="com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite" />
+		</classes>
+	</test>
+	<test name="Set3">
+		<parameter name="sauce" value="true"></parameter>
+		<parameter name="sauce.username" value="nda_qe" />
+		<parameter name="sauce.access.key" value="8f338569-9711-4185-951d-b0e8abc45cc8" />
+		<parameter name="remote.driver.url"
+			value="http://nda_qe:8f338569-9711-4185-951d-b0e8abc45cc8@ondemand.saucelabs.com:80/wd/hub" />
+
+		<parameter name="features" value="features/LitproModiefied" />
+		<parameter name="driver.name" value="Chrome"></parameter>
+		<parameter name="glue"
+			value="com.scholastic.intl.litpro.test.automation.stepdefs" />
+		<parameter name="tags" value="@regressionlpset3" />
+		<parameter name="driver.capabilities"
+			value="{'tunnelIdentifier':'digitalAppstunnel','version':'50.0','platform':'Windows 10'}"></parameter>
+		<parameter name="url"
+			value="https://qa-slz2.scholasticlearningzone.com/slz-portal/#/login3/IND89JY" />
+		<classes>
+			<class
+				name="com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite" />
+		</classes>
+	</test>
+	<test name="Set4">
+		<parameter name="sauce" value="true"></parameter>
+		<parameter name="sauce.username" value="nda_qe" />
+		<parameter name="sauce.access.key" value="8f338569-9711-4185-951d-b0e8abc45cc8" />
+		<parameter name="remote.driver.url"
+			value="http://nda_qe:8f338569-9711-4185-951d-b0e8abc45cc8@ondemand.saucelabs.com:80/wd/hub" />
+
+		<parameter name="features" value="features/LitproModiefied" />
+		<parameter name="driver.name" value="Chrome"></parameter>
+		<parameter name="glue"
+			value="com.scholastic.intl.litpro.test.automation.stepdefs" />
+		<parameter name="tags" value="@regressionlpset4" />
+		<parameter name="driver.capabilities"
+			value="{'tunnelIdentifier':'digitalAppstunnel','version':'50.0','platform':'Windows 10'}"></parameter>
+		<parameter name="url"
+			value="https://qa-slz2.scholasticlearningzone.com/slz-portal/#/login3/INDXKY7" />
+		<classes>
+			<class
+				name="com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite" />
+		</classes>
+	</test>
+	<test name="Set5">
+		<parameter name="sauce" value="true"></parameter>
+		<parameter name="sauce.username" value="nda_qe" />
+		<parameter name="sauce.access.key" value="8f338569-9711-4185-951d-b0e8abc45cc8" />
+		<parameter name="remote.driver.url"
+			value="http://nda_qe:8f338569-9711-4185-951d-b0e8abc45cc8@ondemand.saucelabs.com:80/wd/hub" />
+
+		<parameter name="features" value="features/LitproModiefied" />
+		<parameter name="driver.name" value="Chrome"></parameter>
+		<parameter name="glue"
+			value="com.scholastic.intl.litpro.test.automation.stepdefs" />
+		<parameter name="tags" value="@regressionlpset5" />
+		<parameter name="driver.capabilities"
+			value="{'tunnelIdentifier':'digitalAppstunnel','version':'50.0','platform':'Windows 10'}"></parameter>
+		<parameter name="url"
+			value="https://qa-slz2.scholasticlearningzone.com/slz-portal/#/login3/KAZ66TT" />
+		<classes>
+			<class
+				name="com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite" />
+		</classes>
+	</test>
+</suite>
+

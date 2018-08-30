@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- This xml file is to run the tests locally during development -->
+<suite name="Reading Pro Test Suite" thread-count="4" parallel="tests">
+	<!-- example test configuration -->
+
+	<test name="LPL">
+		<parameter name="sauce" value="true"></parameter>
+		<parameter name="sauce.username" value="scholastic_intl" />
+		<parameter name="sauce.access.key" value="c198fe70-82e4-4f35-9b08-2e255fabe245" />
+		<parameter name="remote.driver.url"
+			value="http://scholastic_intl:c198fe70-82e4-4f35-9b08-2e255fabe245@ondemand.saucelabs.com:80/wd/hub" />
+		<parameter name="features" value="features/LitproLibrary" />
+		<parameter name="driver.name" value="Chrome" />
+		<parameter name="glue" value="com.scholastic.intl.litpro.test.automation" />
+		<parameter name="tags" value="@regressionlpl" />
+		<parameter name="driver.capabilities" value="{'version':'47.0','platform':'OS X 10.11'}"></parameter>
+		<parameter name="url"
+			value="https://qa-slz2.scholasticlearningzone.com/slz-portal/#/login3/AUS3J7V" />
+		<classes>
+			<class
+				name="com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite" />
+		</classes>
+	</test>
+	<test name="LPLhide">
+		<parameter name="sauce" value="true"></parameter>
+		<parameter name="sauce.username" value="scholastic_intl" />
+		<parameter name="sauce.access.key" value="c198fe70-82e4-4f35-9b08-2e255fabe245" />
+		<parameter name="remote.driver.url"
+			value="http://scholastic_intl:c198fe70-82e4-4f35-9b08-2e255fabe245@ondemand.saucelabs.com:80/wd/hub" />
+		<parameter name="features" value="features/LitproLibrary" />
+		<parameter name="driver.name" value="Chrome" />
+		<parameter name="glue" value="com.scholastic.intl.litpro.test.automation" />
+		<parameter name="tags" value="@hideUnhide" />
+		<parameter name="driver.capabilities" value="{'version':'47.0','platform':'OS X 10.11'}"></parameter>
+		<parameter name="url"
+			value="https://qa-slz2.scholasticlearningzone.com/slz-portal/#/login3/AUSF4Y2" />
+		<classes>
+			<class
+				name="com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite" />
+		</classes>
+	</test>
+</suite>

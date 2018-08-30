@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<import xmlns="http://scholastic.com/intl/litpro/exchange">
+    <source>BOOK_MANAGER</source>
+    <book>
+        <id>85793</id>
+        <title>br190</title>
+        <lexile>-190</lexile>
+        <lexile_code></lexile_code>
+        <description>knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj knkljkljkljknkljkljkljknkljkljklj</description>
+        <interest_level>Middle Secondary</interest_level>
+        <sri>true</sri>
+        <src>false</src>
+        <color_wheel></color_wheel>
+        <age_level></age_level>
+        <tag>
+            <name>Action &amp; Adventure</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Animals &amp; Pets</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Biographies</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Celebrations</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Classics</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Folktales &amp; Legends</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Food &amp; Drink</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Friends, Family &amp; Growing Up</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>History</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Humor</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Miscellaneous</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Music &amp; Art</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Mystery</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Nature &amp; the Environment</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Romance &amp; Relationships</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Science &amp; Technology</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Science Fiction &amp; Fantasy</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Space</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Sports &amp; Hobbies</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>World Cultures &amp; Geography</name>
+            <type>Topic</type>
+        </tag>
+        <author>
+            <type>AUTHOR</type>
+            <first_name>kkkkkkkkkk</first_name>
+            <last_name>kkkkk</last_name>
+        </author>
+        <includes>
+            <region id="2" name="Australia/New Zealand"/>
+            <region id="3" name="Canada"/>
+            <region id="4" name="North Asia"/>
+            <region id="5" name="South Asia"/>
+            <region id="6" name="UK"/>
+            <region id="7" name="US"/>
+            <region id="8" name="Latin America"/>
+            <region id="9" name="Middle East"/>
+            <region id="10" name="Europe"/>
+            <region id="11" name="China"/>
+            <product-group code="BKWWSAS" name="Bookflix - South Asia"/>
+            <product-group code="BKWWLAM" name="Bookflix - Latin America"/>
+            <product-group code="BKWWMEA" name="Bookflix - Middle East"/>
+            <product-group code="BKWWEUR" name="Bookflix - Europe"/>
+            <product-group code="TFWWUS" name="Trueflix - US"/>
+            <product-group code="TFWWCA" name="Trueflix - Canada"/>
+            <product-group code="TFWWNAS" name="Trueflix - North Asia"/>
+            <product-group code="TFWWSAS" name="Trueflix - South Asia"/>
+            <product-group code="TFWWLAM" name="Trueflix - Latin America"/>
+        </includes>
+        <publication>
+            <isbn13>9780671708825</isbn13>
+        </publication>
+    </book>
+	<book>
+        <id>85840</id>
+        <title>AutomationTestBook</title>
+        <book_points>88</book_points>
+        <lexile>900</lexile>
+        <lexile_code></lexile_code>
+        <description>sds sd sd sd sd sd sds sd sd sd sd sd sds sd sd sd sd sd sds sd sd sd sd sd sds sd sd sd sd sd sds sd sd sd sd sd sds sd sd sd sd sd sds sd sd sd sd sd sds sd sd sd sd sd sds sd sd sd sd sd sds sd sd sd sd sd sds sd sd sd sd sd sds sd sd sd sd sd sds sd sd sd sd sd sds sd sd sd sd sd sds sd sd sd sd sd sds sd sd sd sd sd</description>
+        <interest_level>Middle Primary</interest_level>
+        <sri>false</sri>
+        <src>false</src>
+        <series>Automation</series>
+        <color_wheel></color_wheel>
+        <age_level></age_level>
+        <tag>
+            <name>Animals &amp; Pets</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Biographies</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Celebrations</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Classics</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Folktales &amp; Legends</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Food &amp; Drink</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Friends, Family &amp; Growing Up</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>History</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Humor</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Miscellaneous</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Music &amp; Art</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Mystery</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Nature &amp; the Environment</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Romance &amp; Relationships</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Science &amp; Technology</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Science Fiction &amp; Fantasy</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Space</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Sports &amp; Hobbies</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>World Cultures &amp; Geography</name>
+            <type>Topic</type>
+        </tag>
+        <author>
+            <type>AUTHOR</type>
+            <first_name>AutorFName</first_name>
+            <last_name>AutorLName</last_name>
+        </author>
+        <contributor>
+            <type>AUTHOR</type>
+            <first_name>AutoNewFName</first_name>
+            <last_name>AutoNewLName</last_name>
+        </contributor>
+        <includes>
+            <region id="2" name="Australia/New Zealand"/>
+            <region id="3" name="Canada"/>
+            <region id="4" name="North Asia"/>
+            <region id="5" name="South Asia"/>
+            <region id="6" name="UK"/>
+            <region id="7" name="US"/>
+            <region id="8" name="Latin America"/>
+            <region id="9" name="Middle East"/>
+            <region id="10" name="Europe"/>
+            <region id="11" name="China"/>
+            <product-group code="BKWWUS" name="Bookflix - US"/>
+            <product-group code="BKWWAUNZ" name="Bookflix - Australia, New Zealand"/>
+            <product-group code="BKWWCA" name="Bookflix - Canada"/>
+            <product-group code="BKWWNAS" name="Bookflix - North Asia"/>
+            <product-group code="BKWWSAS" name="Bookflix - South Asia"/>
+            <product-group code="BKWWLAM" name="Bookflix - Latin America"/>
+            <product-group code="BKWWMEA" name="Bookflix - Middle East"/>
+            <product-group code="BKWWEUR" name="Bookflix - Europe"/>
+            <product-group code="TFWWUS" name="Trueflix - US"/>
+            <product-group code="TFWWCA" name="Trueflix - Canada"/>
+            <product-group code="TFWWNAS" name="Trueflix - North Asia"/>
+            <product-group code="TFWWSAS" name="Trueflix - South Asia"/>
+            <product-group code="TFWWLAM" name="Trueflix - Latin America"/>
+            <product-group code="TFWWMEA" name="Trueflix - Middle East"/>
+            <product-group code="TFWWEUR" name="Trueflix - Europe"/>
+            <product-group code="SRII" name="SRI - International"/>
+            <product-group code="EBB" name="Literacy Pro Library"/>
+            <product-group code="SRPL" name="Scholastic Reading Pro Library"/>
+            <product-group code="LF" name="Literacy Pro"/>
+        </includes>
+        <publication>
+            <isbn13>9780385736855</isbn13>
+        </publication>
+    </book>
+	<book>
+        <id>85841</id>
+        <title>AutomationTestBookQuizzes</title>
+        <book_points>34</book_points>
+        <lexile>500</lexile>
+        <lexile_code></lexile_code>
+        <description>sdsd sd sd sdsaswqe sdsd sd sd sdsaswqe sdsd sd sd sdsaswqe sdsd sd sd sdsaswqe sdsd sd sd sdsaswqe sdsd sd sd sdsaswqe sdsd sd sd sdsaswqe sdsd sd sd sdsaswqe sdsd sd sd sdsaswqe sdsd sd sd sdsaswqe sdsd sd sd sdsaswqe sdsd sd sd sdsaswqe sdsd sd sd sdsaswqe sdsd sd sd sdsaswqe sdsd sd sd sdsaswqe sdsd sd sd sdsaswqe sdsd sd sd sdsaswqe sdsd sd sd sdsaswqe</description>
+        <interest_level>Middle Primary</interest_level>
+        <sri>false</sri>
+        <src>true</src>
+        <color_wheel></color_wheel>
+        <age_level></age_level>
+        <tag>
+            <name>Action &amp; Adventure</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Animals &amp; Pets</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Biographies</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Celebrations</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Classics</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Folktales &amp; Legends</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Food &amp; Drink</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Friends, Family &amp; Growing Up</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>History</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Humor</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Miscellaneous</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Music &amp; Art</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Mystery</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Nature &amp; the Environment</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Romance &amp; Relationships</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Science &amp; Technology</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Science Fiction &amp; Fantasy</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Space</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>Sports &amp; Hobbies</name>
+            <type>Topic</type>
+        </tag>
+        <tag>
+            <name>World Cultures &amp; Geography</name>
+            <type>Topic</type>
+        </tag>
+        <author>
+            <type>AUTHOR</type>
+            <first_name>AutorFName</first_name>
+            <last_name>AutorLName</last_name>
+        </author>
+        <includes>
+            <region id="2" name="Australia/New Zealand"/>
+            <region id="3" name="Canada"/>
+            <region id="4" name="North Asia"/>
+            <region id="5" name="South Asia"/>
+            <region id="6" name="UK"/>
+            <region id="7" name="US"/>
+            <region id="8" name="Latin America"/>
+            <region id="9" name="Middle East"/>
+            <region id="10" name="Europe"/>
+            <region id="11" name="China"/>
+        </includes>
+        <publication>
+            <isbn13>9781594484834</isbn13>
+        </publication>
+    </book>
+    <quiz>
+        <id>84472</id>
+        <book_id>85841</book_id>
+        <active>true</active>
+        <teacher_made>false</teacher_made>
+        <includes>
+            <region id="2" name="Australia/New Zealand"/>
+            <region id="3" name="Canada"/>
+            <region id="4" name="North Asia"/>
+            <region id="5" name="South Asia"/>
+            <region id="6" name="UK"/>
+            <region id="7" name="US"/>
+            <region id="8" name="Latin America"/>
+            <region id="9" name="Middle East"/>
+            <region id="10" name="Europe"/>
+            <region id="11" name="China"/>
+        </includes>
+        <question>
+            <id>2172193</id>
+            <question>asdf</question>
+            <answer_correct>df</answer_correct>
+            <answer_2>a</answer_2>
+            <answer_3>f</answer_3>
+            <answer_4>s</answer_4>
+        </question>
+        <question>
+            <id>2172194</id>
+            <question>e</question>
+            <answer_correct>w</answer_correct>
+            <answer_2>s</answer_2>
+            <answer_3>f</answer_3>
+            <answer_4>s</answer_4>
+        </question>
+        <question>
+            <id>2172195</id>
+            <question>s</question>
+            <answer_correct>v</answer_correct>
+            <answer_2>a</answer_2>
+            <answer_3>e</answer_3>
+            <answer_4>r</answer_4>
+        </question>
+        <question>
+            <id>2172196</id>
+            <question>w</question>
+            <answer_correct>r</answer_correct>
+            <answer_2>a</answer_2>
+            <answer_3>wr</answer_3>
+            <answer_4>a</answer_4>
+        </question>
+        <question>
+            <id>2172197</id>
+            <question>f</question>
+            <answer_correct>s</answer_correct>
+            <answer_2>a</answer_2>
+            <answer_3>saa</answer_3>
+            <answer_4>sd</answer_4>
+        </question>
+        <question>
+            <id>2172198</id>
+            <question>fffffffffff</question>
+            <answer_correct>ssssssssss</answer_correct>
+            <answer_2>sdf</answer_2>
+            <answer_3>sssssssssssdfd</answer_3>
+            <answer_4>sdf</answer_4>
+        </question>
+        <question>
+            <id>2172199</id>
+            <question>aaaaaaaaaaffffffffffffff</question>
+            <answer_correct>dddddddsssssssssdffffff</answer_correct>
+            <answer_2>ffffffffssss</answer_2>
+            <answer_3>sssssssss</answer_3>
+            <answer_4>ffffffffffffffffff</answer_4>
+        </question>
+    </quiz>
+</import>

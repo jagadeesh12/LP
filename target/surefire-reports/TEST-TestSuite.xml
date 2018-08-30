@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="26.286" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/home/jagadeesh/java/jdk1.8.0_161/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.161-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/jagadeesh/Documents/LPLAutomation/intl-test-automation/litpro-test"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/jagadeesh/Documents/LPLAutomation/intl-test-automation/litpro-test"/>
+    <property name="java.runtime.version" value="1.8.0_161-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/home/jagadeesh/java/jdk1.8.0_161/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/home/jagadeesh/Documents/LPLAutomation/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf1096753947514166367.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.19.0-65-generic"/>
+    <property name="user.home" value="/home/jagadeesh"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="jagadeesh"/>
+    <property name="java.class.path" value="/home/jagadeesh/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_1.8.2.20171007-0216/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/home/jagadeesh/java/jdk1.8.0_161/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_161"/>
+    <property name="java.ext.dirs" value="/home/jagadeesh/java/jdk1.8.0_161/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/home/jagadeesh/java/jdk1.8.0_161/jre/lib/resources.jar:/home/jagadeesh/java/jdk1.8.0_161/jre/lib/rt.jar:/home/jagadeesh/java/jdk1.8.0_161/jre/lib/sunrsasign.jar:/home/jagadeesh/java/jdk1.8.0_161/jre/lib/jsse.jar:/home/jagadeesh/java/jdk1.8.0_161/jre/lib/jce.jar:/home/jagadeesh/java/jdk1.8.0_161/jre/lib/charsets.jar:/home/jagadeesh/java/jdk1.8.0_161/jre/lib/jfr.jar:/home/jagadeesh/java/jdk1.8.0_161/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/home/jagadeesh/Documents/LPLAutomation/intl-test-automation/litpro-test/EMBEDDED"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="feature" classname="com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite" time="26.286">
+    <failure message="org.openqa.selenium.WebDriverException: chrome not reachable&#10;  (Session info: chrome=65.0.3325.146)&#10;  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 3.19.0-65-generic x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 4 milliseconds&#10;Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;&#10;System info: host: &apos;jagadeesh-ThinkPad-L450&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-65-generic&apos;, java.version: &apos;1.8.0_161&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=/tmp/.org.chromium.Chromium.mmeNyk}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=65.0.3325.146, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]&#10;Session ID: 0b0258c019d9033c323ba249d6d5ac64&#10;*** Element info: {Using=name, value=UserName}" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=65.0.3325.146)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 3.19.0-65-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'jagadeesh-ThinkPad-L450', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-65-generic', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=/tmp/.org.chromium.Chromium.mmeNyk}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=65.0.3325.146, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 0b0258c019d9033c323ba249d6d5ac64
+*** Element info: {Using=name, value=UserName}
+	at com.scholastic.torque.cucumber.testng.CucumberTestNGRunner.runCucumber(CucumberTestNGRunner.java:111)
+	at com.scholastic.torque.cucumber.testng.CukesByFeatureAndCompositionTest.feature(CukesByFeatureAndCompositionTest.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=65.0.3325.146)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 3.19.0-65-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'jagadeesh-ThinkPad-L450', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-65-generic', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=/tmp/.org.chromium.Chromium.mmeNyk}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=65.0.3325.146, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 0b0258c019d9033c323ba249d6d5ac64
+*** Element info: {Using=name, value=UserName}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.scholastic.intl.litpro.test.automation.pageobjects.ParentPage$1.apply(ParentPage.java:146)
+	at com.scholastic.intl.litpro.test.automation.pageobjects.ParentPage$1.apply(ParentPage.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.scholastic.intl.litpro.test.automation.pageobjects.ParentPage.getElement(ParentPage.java:152)
+	at com.scholastic.intl.litpro.test.automation.pageobjects.SlzLoginPg.login(SlzLoginPg.java:235)
+	at com.scholastic.intl.litpro.test.automation.pageobjects.SlzLoginPg.loginAs(SlzLoginPg.java:248)
+	at com.scholastic.intl.litpro.test.automation.pageobjects.BasePage.launchPortal(BasePage.java:54)
+	at com.scholastic.intl.litpro.test.automation.stepdefs.lpl.LplCommonFlow.i_login_into_SLZ_as_a(LplCommonFlow.java:83)
+	at ✽.When I login into SLZ as a "Teacher"(LPLCommonUI.feature:402)
+</failure>
+    <system-out><![CDATA[Loading: /home/jagadeesh/Documents/LPLAutomation/intl-test-automation/litpro-test/target/test-classes/application.properties
+Loading resources from: /home/jagadeesh/Documents/LPLAutomation/intl-test-automation/litpro-test/target/test-classes/slz/qa
+Loading: /home/jagadeesh/Documents/LPLAutomation/intl-test-automation/litpro-test/target/test-classes/slz/qa/testdata.xml
+Loading: /home/jagadeesh/Documents/LPLAutomation/intl-test-automation/litpro-test/target/test-classes/slz/qa/locators.properties
+Loading: /home/jagadeesh/Documents/LPLAutomation/intl-test-automation/litpro-test/target/test-classes/slz/qa/env.properties
+[Ljava.lang.String;@1abbd63e
+@f1 @regressionlpl @smokelpl
+Feature: LitPro library
+[12:46:55 PM - setWindowHandle:83]: Initiating Shared Web Driver..
+[12:46:55 PM - setWindowHandle:90]: Active entities: 
+Object/PageTitle/WinHandler: com.scholastic.intl.litpro.test.automation.pageobjects.BasePage/Scholastic Learning Zone/CDwindow-758C467A8124205A14067E6DC64EEB0
+[12:46:55 PM - waitForPageLoad:295]: Waiting for Page load...
+[12:46:55 PM - waitForPageLoad:313]: Scholastic Learning Zone Page displayed (time took: ~.03 secs)
+[12:46:55 PM - waitForPageLoad:317]: Current URL:https://qa-slz2.scholasticlearningzone.com/slz-portal/#/login3/AUS2KTW
+[12:46:55 PM - setWindowHandle:83]: Initiating Shared Web Driver..
+[12:46:55 PM - setWindowHandle:90]: Active entities: 
+Object/PageTitle/WinHandler: com.scholastic.intl.litpro.test.automation.pageobjects.SlzLoginPg/Scholastic Learning Zone/CDwindow-758C467A8124205A14067E6DC64EEB0
+[12:46:55 PM - waitForPageLoad:295]: Waiting for Page load...
+[12:46:55 PM - waitForPageLoad:313]: Scholastic Learning Zone Page displayed (time took: ~.02 secs)
+[12:46:55 PM - waitForPageLoad:317]: Current URL:https://qa-slz2.scholasticlearningzone.com/slz-portal/#/login3/AUS2KTW
+[12:46:55 PM - setWindowHandle:83]: Initiating Shared Web Driver..
+[12:46:55 PM - setWindowHandle:90]: Active entities: 
+Object/PageTitle/WinHandler: com.scholastic.intl.litpro.test.automation.pageobjects.SlzLoginPg/Scholastic Learning Zone/CDwindow-758C467A8124205A14067E6DC64EEB0
+[12:46:55 PM - waitForPageLoad:295]: Waiting for Page load...
+[12:46:55 PM - waitForPageLoad:313]: Scholastic Learning Zone Page displayed (time took: ~.02 secs)
+[12:46:55 PM - waitForPageLoad:317]: Current URL:https://qa-slz2.scholasticlearningzone.com/slz-portal/#/login3/AUS2KTW
+false
+[12:46:56 PM - logout:220]: Logout from Slz Home
+[12:46:56 PM - getUserId:301]: Student Credetials (JonSnow/welcome1)
+[12:46:56 PM - login:230]: Login to Scholastic Learning Zone(JonSnow/welcome1)
+[12:46:58 PM - setWindowHandle:83]: Initiating Shared Web Driver..
+[12:46:58 PM - setWindowHandle:90]: Active entities: 
+Object/PageTitle/WinHandler: com.scholastic.intl.litpro.test.automation.pageobjects.SlzHomePg/Scholastic Learning Zone/CDwindow-758C467A8124205A14067E6DC64EEB0
+[12:46:58 PM - waitForPageLoad:295]: Waiting for Page load...
+[12:46:58 PM - waitForPageLoad:313]: Scholastic Learning Zone Page displayed (time took: ~.02 secs)
+[12:46:58 PM - waitForPageLoad:317]: Current URL:https://qa-slz2.scholasticlearningzone.com/slz-portal/#/login3/AUS2KTW
+[12:46:58 PM - setWindowHandle:83]: Initiating Shared Web Driver..
+[12:46:58 PM - setWindowHandle:90]: Active entities: 
+Object/PageTitle/WinHandler: com.scholastic.intl.litpro.test.automation.pageobjects.SlzHomePg/Scholastic Learning Zone/CDwindow-758C467A8124205A14067E6DC64EEB0
+[12:46:58 PM - waitForPageLoad:295]: Waiting for Page load...
+[12:46:58 PM - waitForPageLoad:313]: Scholastic Learning Zone Page displayed (time took: ~.02 secs)
+[12:46:58 PM - waitForPageLoad:317]: Current URL:https://qa-slz2.scholasticlearningzone.com/slz-portal/#/login3/AUS2KTW
+[12:46:58 PM - setWindowHandle:83]: Initiating Shared Web Driver..
+[12:46:58 PM - setWindowHandle:90]: Active entities: 
+Object/PageTitle/WinHandler: com.scholastic.intl.litpro.test.automation.pageobjects.SlzHomePg/Scholastic Learning Zone/CDwindow-758C467A8124205A14067E6DC64EEB0
+[12:46:58 PM - waitForPageLoad:295]: Waiting for Page load...
+[12:46:58 PM - waitForPageLoad:313]: Scholastic Learning Zone Page displayed (time took: ~.02 secs)
+[12:46:58 PM - waitForPageLoad:317]: Current URL:https://qa-slz2.scholasticlearningzone.com/slz-portal/#/login3/AUS2KTW
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''1189
+''''''''''''''''''''''22'''''''''''''''''''''''''''''''''''''2251
+[12:47:05 PM - setWindowHandle:83]: Initiating Shared Web Driver..
+[12:47:06 PM - setWindowHandle:90]: Active entities: 
+Object/PageTitle/WinHandler: com.scholastic.intl.litpro.test.automation.pageobjects.SlzLoginPg/Scholastic Learning Zone/CDwindow-758C467A8124205A14067E6DC64EEB0
+[12:47:06 PM - waitForPageLoad:295]: Waiting for Page load...
+[12:47:06 PM - waitForPageLoad:313]: Scholastic Learning Zone Page displayed (time took: ~.02 secs)
+[12:47:06 PM - waitForPageLoad:317]: Current URL:https://qa-slz2.scholasticlearningzone.com/slz-portal/#/home
+[12:47:06 PM - setWindowHandle:83]: Initiating Shared Web Driver..
+[12:47:06 PM - setWindowHandle:90]: Active entities: 
+Object/PageTitle/WinHandler: com.scholastic.intl.litpro.test.automation.pageobjects.SlzLoginPg/Scholastic Learning Zone/CDwindow-758C467A8124205A14067E6DC64EEB0
+[12:47:06 PM - waitForPageLoad:295]: Waiting for Page load...
+[12:47:06 PM - waitForPageLoad:313]: Scholastic Learning Zone Page displayed (time took: ~.02 secs)
+[12:47:06 PM - waitForPageLoad:317]: Current URL:https://qa-slz2.scholasticlearningzone.com/slz-portal/#/home
+true
+[12:47:06 PM - logout:220]: Logout from Slz Home
+[12:47:07 PM - getUserId:313]: Teacher Credetials (daussho01/welcome1)
+[12:47:07 PM - login:230]: Login to Scholastic Learning Zone(daussho01/welcome1)
+ScenarioFailed=LitProLibrary - Validating the Usage Details of the student - Teacher<>Session=0b0258c019d9033c323ba249d6d5ac64<>Status=Failed<>Platform=Chrome
+SauceOnDemandSessionID=0b0258c019d9033c323ba249d6d5ac64 job-name=LitProLibrary - Validating the Usage Details of the student - Teacher
+Tearing down thread 9
+
+  @regression @EBB-3765 @vikram
+  Scenario: LitProLibrary - Validating the Usage Details of the student - Teacher &amp#27;[90m# LPLCommonUI.feature:399&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI login into SLZ as a "&amp#27;[0m&amp#27;[32m&amp#27;[1mStudent&amp#27;[0m&amp#27;[32m"&amp#27;[0m                                          &amp#27;[90m# LplCommonFlow.i_login_into_SLZ_as_a(String)&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should collect the usage detail info&amp#27;[0m                                   &amp#27;[90m# LplCommonFlow.i_should_collect_the_usage_detail_info()&amp#27;[0m
+    &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mI login into SLZ as a "&amp#27;[0m&amp#27;[31m&amp#27;[1mTeacher&amp#27;[0m&amp#27;[31m"&amp#27;[0m                                          &amp#27;[90m# LplCommonFlow.i_login_into_SLZ_as_a(String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.WebDriverException: chrome not reachable
+        (Session info: chrome=65.0.3325.146)
+        (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 3.19.0-65-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 4 milliseconds
+      Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+      System info: host: 'jagadeesh-ThinkPad-L450', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-65-generic', java.version: '1.8.0_161'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=/tmp/.org.chromium.Chromium.mmeNyk}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=65.0.3325.146, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+      Session ID: 0b0258c019d9033c323ba249d6d5ac64
+      *** Element info: {Using=name, value=UserName}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
+      	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+      	at com.scholastic.intl.litpro.test.automation.pageobjects.ParentPage$1.apply(ParentPage.java:146)
+      	at com.scholastic.intl.litpro.test.automation.pageobjects.ParentPage$1.apply(ParentPage.java:1)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+      	at com.scholastic.intl.litpro.test.automation.pageobjects.ParentPage.getElement(ParentPage.java:152)
+      	at com.scholastic.intl.litpro.test.automation.pageobjects.SlzLoginPg.login(SlzLoginPg.java:235)
+      	at com.scholastic.intl.litpro.test.automation.pageobjects.SlzLoginPg.loginAs(SlzLoginPg.java:248)
+      	at com.scholastic.intl.litpro.test.automation.pageobjects.BasePage.launchPortal(BasePage.java:54)
+      	at com.scholastic.intl.litpro.test.automation.stepdefs.lpl.LplCommonFlow.i_login_into_SLZ_as_a(LplCommonFlow.java:83)
+      	at ✽.When I login into SLZ as a "Teacher"(LPLCommonUI.feature:402)
+      &amp#27;[0m
+    &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should click on "&amp#27;[0m&amp#27;[36m&amp#27;[1mbreaking bad 6&amp#27;[0m&amp#27;[36m" in roster tree&amp#27;[0m                        &amp#27;[90m# LplCommonFlow.i_should_click_on_something_in_roster_tree(String)&amp#27;[0m
+    &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should click on "&amp#27;[0m&amp#27;[36m&amp#27;[1mLui Class&amp#27;[0m&amp#27;[36m" in roster tree&amp#27;[0m                             &amp#27;[90m# LplCommonFlow.i_should_click_on_something_in_roster_tree(String)&amp#27;[0m
+    &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should click on student "&amp#27;[0m&amp#27;[36m&amp#27;[1mSnow Jon&amp#27;[0m&amp#27;[36m" in roster tree&amp#27;[0m                      &amp#27;[90m# LplCommonFlow.i_should_click_on_student_something_in_roster_tree(String)&amp#27;[0m
+    &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should compare usage detail info of student with teacher&amp#27;[0m               &amp#27;[90m# LplCommonFlow.i_should_compare_usage_detail_info_of_student_with_teacher()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 12065
+Only local connections are allowed.
+chrome not reachable
+  (Session info: chrome=65.0.3325.146)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 3.19.0-65-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'jagadeesh-ThinkPad-L450', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-65-generic', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=/tmp/.org.chromium.Chromium.mmeNyk}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=65.0.3325.146, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 0b0258c019d9033c323ba249d6d5ac64
+]]></system-err>
+  </testcase>
+</testsuite>

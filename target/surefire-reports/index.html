@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Reading_Pro_Test_Suite">
+              <span class="suite-name border-failed">Reading Pro Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Reading_Pro_Test_Suite">
+                    <span>vikramtesting.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Reading_Pro_Test_Suite">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Reading_Pro_Test_Suite">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Reading_Pro_Test_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Reading_Pro_Test_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Reading_Pro_Test_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Reading_Pro_Test_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Reading_Pro_Test_Suite" class="hide-methods failed suite-Reading_Pro_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Reading_Pro_Test_Suite -->
+                      <a href="#" panel-name="suite-Reading_Pro_Test_Suite" class="show-methods failed suite-Reading_Pro_Test_Suite"> (show)</a> <!-- show-methods failed suite-Reading_Pro_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Reading_Pro_Test_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Reading_Pro_Test_Suite" title="com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite" hash-for-method="feature(LitPro library)">feature(LitPro library)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Reading_Pro_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Reading_Pro_Test_Suite" class="panel Reading_Pro_Test_Suite">
+          <div class="suite-Reading_Pro_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(LitPro library)">
+                  </a> <!-- feature(LitPro library) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(LitPro library)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=65.0.3325.146)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 3.19.0-65-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;jagadeesh-ThinkPad-L450&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-65-generic&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=/tmp/.org.chromium.Chromium.mmeNyk}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=65.0.3325.146, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 0b0258c019d9033c323ba249d6d5ac64
+*** Element info: {Using=name, value=UserName}
+	at com.scholastic.torque.cucumber.testng.CucumberTestNGRunner.runCucumber(CucumberTestNGRunner.java:111)
+	at com.scholastic.torque.cucumber.testng.CukesByFeatureAndCompositionTest.feature(CukesByFeatureAndCompositionTest.java:22)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=65.0.3325.146)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Linux 3.19.0-65-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;jagadeesh-ThinkPad-L450&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-65-generic&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=/tmp/.org.chromium.Chromium.mmeNyk}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=65.0.3325.146, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 0b0258c019d9033c323ba249d6d5ac64
+*** Element info: {Using=name, value=UserName}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.scholastic.intl.litpro.test.automation.pageobjects.ParentPage$1.apply(ParentPage.java:146)
+	at com.scholastic.intl.litpro.test.automation.pageobjects.ParentPage$1.apply(ParentPage.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.scholastic.intl.litpro.test.automation.pageobjects.ParentPage.getElement(ParentPage.java:152)
+	at com.scholastic.intl.litpro.test.automation.pageobjects.SlzLoginPg.login(SlzLoginPg.java:235)
+	at com.scholastic.intl.litpro.test.automation.pageobjects.SlzLoginPg.loginAs(SlzLoginPg.java:248)
+	at com.scholastic.intl.litpro.test.automation.pageobjects.BasePage.launchPortal(BasePage.java:54)
+	at com.scholastic.intl.litpro.test.automation.stepdefs.lpl.LplCommonFlow.i_login_into_SLZ_as_a(LplCommonFlow.java:83)
+	at ✽.When I login into SLZ as a &quot;Teacher&quot;(LPLCommonUI.feature:402)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Reading_Pro_Test_Suite-class-failed -->
+        </div> <!-- panel Reading_Pro_Test_Suite -->
+        <div panel-name="test-xml-Reading_Pro_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/jagadeesh/Documents/LPLAutomation/intl-test-automation/litpro-test/config/vikramtesting.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Reading Pro Test Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;@vikram&quot;&gt;
+    &lt;parameter name=&quot;features&quot; value=&quot;features/LitproLibrary&quot;/&gt;
+    &lt;parameter name=&quot;glue&quot; value=&quot;com.scholastic.intl.litpro.test.automation&quot;/&gt;
+    &lt;parameter name=&quot;driver.name&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;parameter name=&quot;driver.capabilities&quot; value=&quot;{&amp;#039;version&amp;#039;:&amp;#039;47.0&amp;#039;,&amp;#039;platform&amp;#039;:&amp;#039;OS X 10.11&amp;#039;}&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://qa-slz2.scholasticlearningzone.com/slz-portal/#/login3/AUS2KTW&quot;/&gt;
+    &lt;parameter name=&quot;tags&quot; value=&quot;@vikram&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- @vikram --&gt;
+  &lt;test name=&quot;@vikram(failed)&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;features&quot; value=&quot;features/LitproLibrary&quot;/&gt;
+    &lt;parameter name=&quot;glue&quot; value=&quot;com.scholastic.intl.litpro.test.automation&quot;/&gt;
+    &lt;parameter name=&quot;driver.name&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;parameter name=&quot;driver.capabilities&quot; value=&quot;{&amp;#039;version&amp;#039;:&amp;#039;47.0&amp;#039;,&amp;#039;platform&amp;#039;:&amp;#039;OS X 10.11&amp;#039;}&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://qa-slz2.scholasticlearningzone.com/slz-portal/#/login3/AUS2KTW&quot;/&gt;
+    &lt;parameter name=&quot;tags&quot; value=&quot;@vikram&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDownClass&quot;/&gt;
+          &lt;include name=&quot;setUpClass&quot;/&gt;
+          &lt;include name=&quot;feature&quot; invocation-numbers=&quot;0&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- @vikram(failed) --&gt;
+&lt;/suite&gt; &lt;!-- Reading Pro Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Reading_Pro_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Reading Pro Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">@vikram (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">@vikram(failed) (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Reading_Pro_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Reading Pro Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">feature</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Reading_Pro_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Reading Pro Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Reading_Pro_Test_Suite');
+function tableData_Reading_Pro_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'feature')
+data.setCell(0, 2, 'com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite')
+data.setCell(0, 3, 26277);
+window.suiteTableData['Reading_Pro_Test_Suite']= { tableData: data, tableDiv: 'times-div-Reading_Pro_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <div id="times-div-Reading_Pro_Test_Suite">
+              </div> <!-- times-div-Reading_Pro_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Reading_Pro_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Reading Pro Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">feature(LitPro library)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div "featureFile">Feature File: LPLCommonUI.feature</div></span>
+                <span class="reporter-method-output"><div "feature">Feature: LitPro library</div></span>
+                <span class="reporter-method-output"><div "scenario">Scenario: LitProLibrary - Validating the Usage Details of the student - Teacher</div></span>
+                <span class="reporter-method-output"><div "result">When  I login into SLZ as a &quot;Student&quot; (passed : 3s)</div></span>
+                <span class="reporter-method-output"><div "result">Then  I should collect the usage detail info (passed : 7s)</div></span>
+                <span class="reporter-method-output"><div "result">When  I login into SLZ as a &quot;Teacher&quot; (failed : 9s)</div></span>
+                <span class="reporter-method-output"><div "result">Then  I should click on &quot;breaking bad 6&quot; in roster tree (skipped)</div></span>
+                <span class="reporter-method-output"><div "result">Then  I should click on &quot;Lui Class&quot; in roster tree (skipped)</div></span>
+                <span class="reporter-method-output"><div "result">Then  I should click on student &quot;Snow Jon&quot; in roster tree (skipped)</div></span>
+                <span class="reporter-method-output"><div "result">Then  I should compare usage detail info of student with teacher (skipped)</div></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Reading_Pro_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Reading_Pro_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@7d9d1a19)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature(LitPro library)</span>
+                <span class="method-start">1161 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">27446 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

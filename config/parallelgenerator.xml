@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0"
+       name="Demandware" parallel="tests">
+  <parameter name="remote.driver.url"
+             value="http://sereti_qe:b9b8a9e1-e525-46af-9c7f-4a11c372b5c5@ondemand.saucelabs.com:80/wd/hub" />
+  <parameter name="tdm.data" value="off" />
+  <parameter name="glue" value="com.scholastic.intl.litpro.test.automation" />
+  <parameter name="sauce" value="true" />
+  <listeners>
+    <listener class-name="com.dw.automation.support.IParallelScenario"></listener>
+  </listeners>
+  <test name="TestXML">
+    <parameter name="driver.capabilities"
+               value="{'version': '57.0','platform':'Windows 10','name':'DWCA','maxDuration':'10800'}" />
+    <parameter name="features" value="features/LitproModiefied/CECCA-155.feature" />
+
+    <parameter name="driver.name" value="Chrome" />
+    <classes>
+      <class name="com.scholastic.intl.litpro.test.automation.tests.CucumberFeatureSuite" />
+    </classes>
+  </test>
+
+</suite> <!-- Demandware -->
